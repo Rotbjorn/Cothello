@@ -17,7 +17,8 @@ $(EXEC): deps
 	mkdir -p build
 	echo $(OBJECTS)
 	gcc $(OBJECTS) \
-		-o $(EXEC)
+		-o $(EXEC) \
+		-lncurses
 
 
 deps:
@@ -25,7 +26,7 @@ deps:
 	$(MAKE) -C src
 
 
-run: $(EXEC)
+run:
 	./$(EXEC)
 
 clean:

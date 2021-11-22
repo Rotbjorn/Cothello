@@ -11,6 +11,8 @@ typedef struct Othello {
 } Othello;
 
 
+void othello_init(Othello *);
 void othello_draw(Othello *);
-void othello_play_player(Othello *);
+void othello_handle_input(Othello *, Color c);
+void othello_play_player(Othello *, Color c);
 void othello_play_ai(Othello *);
