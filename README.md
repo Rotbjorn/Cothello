@@ -1,7 +1,6 @@
 # Cothello
-Othello implemented in C
 
-Currently only supports two players
+Othello implemented in C using ncurses
 
 ## TODO
 
